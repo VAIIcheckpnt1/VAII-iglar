@@ -1,0 +1,87 @@
+body{
+    padding: 1em;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 8vh;
+    margin: 0;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.region{
+    background-color: silver;
+}
+
+th, td{
+    border: 1px solid;
+}
+
+#hlavicka{
+    background-color: lightgray;
+}
+
+tr:hover:not( #hlavicka){
+    background-color: grey;
+}
+
+
+
+#menu{
+    position: fixed;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+@media only screen and (min-width: 800px){
+    #menu>#list{
+        position: fixed;
+        max-width: 14vw;
+        font-size: 2vw;
+        background-color: lightskyblue;
+        list-style-type: none;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+    }
+    .content{
+        padding-left: 14vw;
+    }
+    #menu:hover>#list{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .content{
+        padding-left: 10vw;
+    }
+    #menu>#list{
+        display: none;
+    }
+    #menu:hover>#list{
+        display: block;
+        background-color: rgb(175, 208, 255);
+    }
+}
+
+#menu a {
+    display: block;
+    padding: 1vh;
+    border-bottom: 0.5vh solid black;
+    color: black;
+    text-decoration: none;
+
+}
+#menu a:hover{
+    background-color: #6497ff;
+    cursor: pointer;
+}
