@@ -12,6 +12,10 @@ h1{
 table{
     border-collapse: collapse;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 25vh;
+    min-width: 25vw;
 }
 
 .region{
@@ -20,6 +24,11 @@ table{
 
 th, td{
     border: 1px solid;
+
+}
+h2{
+    text-align: center;
+    font-size: 5vh;
 }
 
 #hlavicka{
@@ -42,6 +51,9 @@ tr:hover:not( #hlavicka){
 
 
 @media only screen and (min-width: 800px){
+    #menu-icon{
+        display: none;
+    }
     #menu>#list{
         position: fixed;
         max-width: 14vw;
@@ -52,7 +64,7 @@ tr:hover:not( #hlavicka){
         padding: 0;
         margin: 0;
     }
-    .content{
+    .obsah{
         padding-left: 14vw;
     }
     #menu:hover>#list{
