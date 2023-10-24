@@ -17,6 +17,14 @@ table{
     min-height: 25vh;
     min-width: 25vw;
 }
+h3{
+    text-align: center;
+}
+#postavenie{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .region{
     background-color: silver;
